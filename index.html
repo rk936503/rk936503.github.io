@@ -4,103 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="title" content="Rahul Kumar - Backend & Full Stack Developer Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar | Backend & Full Stack Developer Portfolio</title>
     <meta name="description"
         content="Rahul Kumar's professional portfolio — Backend & Full Stack Developer specializing in Node.js, PostgreSQL, Docker, and production-grade system design. Explore projects, skills, and achievements.">
     <meta name="keywords"
-        content="Rahul Kumar, Backend Developer, Full Stack Developer, Portfolio, Node.js, Express, PostgreSQL, Docker, Kubernetes, System Design, Software Engineer, Professional Portfolio, portfolio website">
+        content="Rahul Kumar, Backend Developer, Full Stack Developer, Portfolio, Node.js, Express, PostgreSQL, Docker, Kubernetes, System Design, Software Engineer">
     <meta name="author" content="Rahul Kumar">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
-    <title>Rahul Kumar Portfolio</title>
-    <!--=================== Main CSS ====================-->
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="main.css">
-    <!--=================== Google Fonts ====================-->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-
-    <!--=================== Remixicons ====================-->
+    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-
 </head>
 
 <body>
 
-    <!--=================== Header ====================-->
+    <!-- Header -->
     <header id="header" class="header">
         <div class="container">
             <nav class="nav">
-                <a href="/" class="nav__brand">
-                    <i class="ri-code-s-slash-line"></i>Rahul<Span>Kumar</Span>
+                <a href="#hero" class="nav__brand">
+                    <i class="ri-code-s-slash-line"></i>Rahul<span>Kumar</span>
                 </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
+                        <li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
+                        <li class="nav__item"><a href="#certification" class="nav__link">Certifications</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                         <li class="nav__item">
-                            <a href="#hero" class="nav__link">Home</a>
+                            <a href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" target="_blank"
+                                rel="noopener noreferrer" class="nav__link">Blogs</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Qualification</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#certification" class="nav__link">Certifications</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">Projects</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" class="nav__link">Blogs</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
-                        </li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav__toggle">
-                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                    <i id="nav-toggle" class="ri-menu-3-line" aria-label="Toggle menu"></i>
                 </div>
             </nav>
         </div>
     </header>
-    <!--=================== main ====================-->
+
     <main class="main">
-        <!--=================== Hero ====================-->
+
+        <!-- Hero -->
         <section id="hero" class="hero">
             <div class="container">
                 <div class="d-grid hero__wrapper">
                     <div class="hero__content">
                         <h1 class="hero__title">Hi, I am Rahul Kumar</h1>
-                        <h2 id="typewriter"
-                            style="font-size: 25px; font-weight: bold; color: #1e90ff; border-right: 2px solid #1e90ff; white-space: nowrap; overflow: hidden; display: inline-block;">
-                        </h2>
-                        <p style="margin-top:15px;" class="hero__description">🌟 Backend-leaning Full Stack Developer
-                            and Computer Science student 🎓, focused on building production-grade systems —
-                            microservices, auth, rate limiting, and observability — not just demos 💻.
-                            Comfortable across the stack (Node.js, PostgreSQL, Docker, Kubernetes) with hands-on
-                            DevOps experience 👨‍💻. A quick learner and problem-solving enthusiast 🤔, driven by
-                            system design thinking 💡. Currently exploring opportunities to contribute skills
-                            and collaborate on dynamic projects 🤝.
+                        <h2 id="typewriter" class="hero__typewriter"></h2>
+                        <p class="hero__description">🌟 Backend-leaning Full Stack Developer and Computer Science
+                            student 🎓, focused on building production-grade systems — microservices, auth, rate
+                            limiting, and observability — not just demos 💻. Comfortable across the stack (Node.js,
+                            PostgreSQL, Docker, Kubernetes) with hands-on DevOps experience 👨‍💻. A quick learner and
+                            problem-solving enthusiast 🤔, driven by system design thinking 💡. Currently exploring
+                            opportunities to contribute skills and collaborate on dynamic projects 🤝.
                         </p>
-                        <a href="mailto:rk936503@gmail.com" class="btn--primary"
-                            style="padding:1.5rem 4rem;margin-bottom:10px;display:inline-block;">Hire Me!</a>
+                        <a href="mailto:rk936503@gmail.com" class="btn btn--primary hero__cta">Hire Me!</a>
                         <div class="hero__info">
                             <div class="hero__info-wrapper">
                                 <p class="hero__info-number">3+</p>
@@ -108,11 +83,12 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/rahul.jpeg" alt="Rahul" class="hero__img">
+                    <img src="./assets/rahul.jpeg" alt="Rahul Kumar" class="hero__img">
                 </div>
             </div>
         </section>
-        <!--=================== About ====================-->
+
+        <!-- About -->
         <section id="about" class="section about">
             <div class="container">
                 <div class="section__header">
@@ -138,46 +114,32 @@
                             <div class="skills__content">
                                 <h4 class="skills__subtitle">Backend</h4>
                                 <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Node.js / Express.js</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        RESTful APIs & JWT Auth</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Prisma / Drizzle ORM</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        PostgreSQL</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MongoDB</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Redis</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Node.js / Express.js</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> RESTful APIs & JWT Auth</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Prisma / Drizzle ORM</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> PostgreSQL</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> MongoDB</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Redis</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> FastAPI & pgvector</li>
                                 </ul>
                             </div>
                             <div class="skills__content">
                                 <h4 class="skills__subtitle">Frontend</h4>
                                 <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        HTML / CSS</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        JavaScript / TypeScript</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        React</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Tailwind CSS</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> HTML / CSS</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> JavaScript / TypeScript</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> React</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Tailwind CSS</li>
                                 </ul>
                             </div>
                             <div class="skills__content">
                                 <h4 class="skills__subtitle">DevOps</h4>
                                 <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Docker & Kubernetes</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        AWS (EC2) & Terraform</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Jenkins & GitHub Actions</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Prometheus & Grafana</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Linux</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Docker & Kubernetes</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> AWS (EC2) & Terraform</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Jenkins & GitHub Actions</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Prometheus & Grafana</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i> Linux</li>
                                 </ul>
                             </div>
                         </div>
@@ -186,45 +148,38 @@
             </div>
         </section>
 
-        <!--=================== Qualification ====================-->
+        <!-- Qualification -->
         <section id="qualification" class="section qualification">
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Qualification</h2>
-                    <span class="section__subtitle">Experience & Education</span>
+                    <span class="section__subtitle">Education</span>
                 </div>
-                <!--============== Education ============-->
                 <div class="qualification__wrapper">
                     <h3 class="qualification__name">
                         <i class="ri-booklet-fill"></i>
                         Education
                     </h3>
                     <div class="d-grid qualification__content">
-                        <!-- Education 1-->
                         <div class="qualification__item">
                             <h3 class="qualification__title">B.Tech - Computer Science and Engineering (CGPA: 7.87)</h3>
                             <h4 class="qualification__title">Lovely Professional University</h4>
                             <p class="qualification__description">As a computer science student, I have a strong
-                                foundation in object-oriented algorithms, data structures, software design and
-                                Development.
-                                My coursework has provided me with a deep understanding of the principles and practices
-                                of computer science,
-                                and I have honed my programming skills through various projects and assignments.
+                                foundation in object-oriented programming, data structures and algorithms, and
+                                software design and development. My coursework has given me a deep understanding of
+                                the principles and practices of computer science, and I have honed my programming
+                                skills through various projects and assignments.
                             </p>
                             <span class="qualification__date">Aug 2023 – Present</span>
                         </div>
-                        <!-- Education 2-->
                         <div class="qualification__item">
                             <h3 class="qualification__title">Intermediate (82%)</h3>
                             <h4 class="qualification__title">Kendriya Vidyalaya, Khatkhati</h4>
                             <span class="qualification__date">Apr 2021 – Mar 2022</span>
                         </div>
-                        <!-- Education 3-->
                         <div class="qualification__item">
                             <h3 class="qualification__title">Matriculation (85%)</h3>
                             <h4 class="qualification__title">King David School, Khatkhati</h4>
-                            <p class="qualification__description">
-                            </p>
                             <span class="qualification__date">Apr 2019 – Mar 2020</span>
                         </div>
                     </div>
@@ -236,147 +191,85 @@
             </div>
         </section>
 
-
-        <!--=================== Certifications ====================-->
-<section id="certification" class="section certification">
-    <div class="container">
-        <div class="section__header">
-            <h2 class="section__title">Certifications</h2>
-            <span class="section__subtitle">My Achievements</span>
-        </div>
-
-        <div class="d-grid certification__wrapper">
-            <!-- Certificate 1 -->
-            <div class="certification__item">
-                <h3 class="certification__title">
-                    Cloud Computing
-                </h3>
-                <p class="certification__issuer">NPTEL · Apr 2026</p>
-                <a href="./assets/certificates/Cloud Computing.pdf" target="_blank" class="btn btn--primary">
-                    View Certificate
-                </a>
-            </div>
-
-            <!-- Certificate 2 -->
-            <div class="certification__item">
-                <h3 class="certification__title">
-                    Node.js — Beginner to Advance (with Projects)
-                </h3>
-                <p class="certification__issuer">Udemy · Nov 2025</p>
-                <a href="./assets/certificates/NodejsCertificate.pdf" target="_blank" class="btn btn--primary">
-                    View Certificate
-                </a>
-            </div>
-
-            <!-- Certificate 3 -->
-            <div class="certification__item">
-                <h3 class="certification__title">
-                    Computer Networking
-                </h3>
-                <p class="certification__issuer">Coursera · Dec 2024</p>
-                <a href="./assets/certificates/Computer Networking.pdf" target="_blank" class="btn btn--primary">
-                    View Certificate
-                </a>
-            </div>
-
-            <!-- Certificate 4 -->
-            <div class="certification__item">
-                <h3 class="certification__title">
-                    TCP/IP Advanced Protocols
-                </h3>
-                <p class="certification__issuer">Coursera · Dec 2024</p>
-                <a href="./assets/certificates/TCPIP Advanced Protocols.pdf" target="_blank" class="btn btn--primary">
-                    View Certificate
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-        <!--=================== services ====================-->
-        <section id="services" class="section services" style="padding: 80px 0; background-color: inherit;">
-            <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
-                <h2 style="font-size: 32px; font-weight: bold; text-align: center; color: white; margin-bottom: 32px;">
-                    Services
-                </h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
-                    <!-- Backend Development -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-server-fill" style="font-size: 40px; color: #4299e1;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Backend Development
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Building secure, scalable REST APIs with
-                            Node.js/Express, JWT auth, and PostgreSQL/MongoDB.</p>
+        <!-- Certifications -->
+        <section id="certification" class="section certification">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Certifications</h2>
+                    <span class="section__subtitle">My Achievements</span>
+                </div>
+                <div class="d-grid certification__wrapper">
+                    <div class="certification__item">
+                        <h3 class="certification__title">Cloud Computing</h3>
+                        <p class="certification__issuer">NPTEL · Apr 2026</p>
+                        <a href="./assets/certificates/Cloud Computing.pdf" target="_blank" rel="noopener"
+                            class="btn btn--primary">View Certificate</a>
                     </div>
-
-                    <!-- DevOps & Infrastructure -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-cloud-fill" style="font-size: 40px; color: #9f7aea;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            DevOps & Infrastructure
-                        </h3>
-                        <p style="color: #718096; text-align: center;">CI/CD pipelines, Docker, Kubernetes, and
-                            infrastructure as code with Terraform on AWS.</p>
+                    <div class="certification__item">
+                        <h3 class="certification__title">Node.js — Beginner to Advance (with Projects)</h3>
+                        <p class="certification__issuer">Udemy · Nov 2025</p>
+                        <a href="./assets/certificates/NodejsCertificate.pdf" target="_blank" rel="noopener"
+                            class="btn btn--primary">View Certificate</a>
                     </div>
-
-                    <!-- Full-Stack Projects -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-code-s-slash-line" style="font-size: 40px; color: #48bb78;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Full-Stack Projects
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Developing end-to-end web applications with both
-                            front-end and back-end functionalities.</p>
+                    <div class="certification__item">
+                        <h3 class="certification__title">Computer Networking</h3>
+                        <p class="certification__issuer">Coursera · Dec 2024</p>
+                        <a href="./assets/certificates/Computer Networking.pdf" target="_blank" rel="noopener"
+                            class="btn btn--primary">View Certificate</a>
                     </div>
-
-                    <!-- Monitoring & Observability -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-dashboard-3-fill" style="font-size: 40px; color: #319795;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Monitoring & Observability
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Instrumenting services with Prometheus and
-                            Grafana dashboards for production visibility.</p>
-                    </div>
-
-                    <!-- Other Miscellaneous Services -->
-                    <div
-                        style="background-color: black; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                        <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-                            <i class="ri-lightbulb-flash-fill" style="font-size: 40px; color: #00ccff;"></i>
-                        </div>
-                        <h3
-                            style="font-size: 20px; font-weight: 600; text-align: center; margin-bottom: 8px; color: white;">
-                            Other Miscellaneous Services
-                        </h3>
-                        <p style="color: #718096; text-align: center;">Providing tailored solutions and custom services
-                            for any unique requirements. You name it, we'll make it happen!</p>
+                    <div class="certification__item">
+                        <h3 class="certification__title">TCP/IP Advanced Protocols</h3>
+                        <p class="certification__issuer">Coursera · Dec 2024</p>
+                        <a href="./assets/certificates/TCPIP Advanced Protocols.pdf" target="_blank" rel="noopener"
+                            class="btn btn--primary">View Certificate</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Services -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Services</h2>
+                    <span class="section__subtitle">What I can do</span>
+                </div>
+                <div class="d-grid service__wrapper">
+                    <div class="service__card">
+                        <i class="ri-server-fill service__icon" style="color: #4299e1;"></i>
+                        <h3 class="service__title">Backend Development</h3>
+                        <p class="service__description">Building secure, scalable REST APIs with Node.js/Express,
+                            JWT auth, and PostgreSQL/MongoDB.</p>
+                    </div>
+                    <div class="service__card">
+                        <i class="ri-cloud-fill service__icon" style="color: #9f7aea;"></i>
+                        <h3 class="service__title">DevOps & Infrastructure</h3>
+                        <p class="service__description">CI/CD pipelines, Docker, Kubernetes, and infrastructure as
+                            code with Terraform on AWS.</p>
+                    </div>
+                    <div class="service__card">
+                        <i class="ri-code-s-slash-line service__icon" style="color: #48bb78;"></i>
+                        <h3 class="service__title">Full-Stack Projects</h3>
+                        <p class="service__description">Developing end-to-end web applications with both front-end
+                            and back-end functionality.</p>
+                    </div>
+                    <div class="service__card">
+                        <i class="ri-dashboard-3-fill service__icon" style="color: #319795;"></i>
+                        <h3 class="service__title">Monitoring & Observability</h3>
+                        <p class="service__description">Instrumenting services with Prometheus and Grafana
+                            dashboards for production visibility.</p>
+                    </div>
+                    <div class="service__card">
+                        <i class="ri-lightbulb-flash-fill service__icon" style="color: #00ccff;"></i>
+                        <h3 class="service__title">Custom Solutions</h3>
+                        <p class="service__description">Tailored solutions for unique requirements. Tell me what you
+                            need and let's make it happen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!--=================== Projects ====================-->
+        <!-- Projects -->
         <section id="project" class="section project">
             <div class="container">
                 <div class="section__header">
@@ -384,192 +277,148 @@
                     <span class="section__subtitle">My recent work</span>
                 </div>
                 <div class="d-grid project__wrapper">
-                    <!--============== project 1: Aegis API =============-->
+                    <!-- TODO: replace the repo URLs below with your real repository links -->
                     <div class="project__content">
                         <img src="assets/img/project1.png" alt="Aegis API" class="project__img">
-                        <a href="https://github.com/rk936503" class="project__link">
+                        <a href="https://github.com/rk936503/aegis-api" target="_blank" rel="noopener" class="project__link">
                             <h3 class="project__title">Aegis API — Distributed Microservices Gateway</h3>
                         </a>
                         <p class="project__description">A 4-service microservices backend (API Gateway, Auth, User,
                             Order) with Prisma/PostgreSQL, JWT auth, Redis-backed rate limiting, per-service circuit
                             breakers, and full Prometheus + Grafana observability. 🛡️</p>
-                        <a href="https://github.com/rk936503" class="project__link">View Project
+                        <a href="https://github.com/rk936503/aegis-api" target="_blank" rel="noopener" class="project__link">View Project
                             <i class="ri-arrow-right-line"></i></a>
                     </div>
-                    <!--============== project 2: URL Shortener API =============-->
                     <div class="project__content">
                         <img src="assets/img/project2.png" alt="URL Shortener API" class="project__img">
-                        <a href="https://github.com/rk936503" class="project__link">
+                        <a href="https://github.com/rk936503/url-shortener-api" target="_blank" rel="noopener" class="project__link">
                             <h3 class="project__title">URL Shortener API</h3>
                         </a>
                         <p class="project__description">A production REST API (Express, Drizzle ORM, PostgreSQL)
                             deployed to AWS EC2 via a Jenkins CI/CD pipeline, with Terraform-provisioned infra,
                             Kubernetes manifests, and a 13-panel Grafana dashboard. 🔗</p>
-                        <a href="https://github.com/rk936503" class="project__link">View Project
+                        <a href="https://github.com/rk936503/url-shortener-api" target="_blank" rel="noopener" class="project__link">View Project
                             <i class="ri-arrow-right-line"></i></a>
                     </div>
-                    <!--============== project 3: Job Application Tracker =============-->
                     <div class="project__content">
                         <img src="assets/img/project3.png" alt="Job Application Tracker" class="project__img">
-                        <a href="https://job-tracker-kvj9.onrender.com" class="project__link">
+                        <a href="https://job-tracker-kvj9.onrender.com" target="_blank" rel="noopener" class="project__link">
                             <h3 class="project__title">Job Application Tracker</h3>
                         </a>
                         <p class="project__description">A multi-user job application tracking web app (Flask,
                             PostgreSQL, Docker) live on Render, with a ledger-style UI and a GitHub Actions CI/CD
                             pipeline. 📋</p>
-                        <a href="https://job-tracker-kvj9.onrender.com" class="project__link">Live Demo
+                        <a href="https://job-tracker-kvj9.onrender.com" target="_blank" rel="noopener" class="project__link">Live Demo
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <div class="project__content">
+                        <img src="assets/img/project4.png" alt="Enterprise Knowledge Base API" class="project__img">
+                        <a href="https://github.com/rk936503/enterprise-knowledge-base-api" target="_blank" rel="noopener" class="project__link">
+                            <h3 class="project__title">Enterprise Knowledge Base API <span class="project__badge">In progress</span></h3>
+                        </a>
+                        <p class="project__description">A multi-tenant RAG-as-a-Service platform built with FastAPI,
+                            PostgreSQL + pgvector and Docker, designed around retrieval quality and tenant isolation
+                            rather than a basic chat-with-your-docs demo. 🧠</p>
+                        <a href="https://github.com/rk936503/enterprise-knowledge-base-api" target="_blank" rel="noopener" class="project__link">View Project
                             <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
-                <div style="align-items: center;justify-content: center;display: flex; margin-top:10px;"><a
-                        href="https://github.com/rk936503?tab=repositories" class="btn--primary"
-                        style="padding:1.5rem 4rem;margin-top:10px;display: inline-block;align-items:center;text-align:center;justify-content:center;">View
-                        More Projects
-                        <i style="text-align:center;" class="fa-solid fa-angle-down fa-bounce"></i></a></div>
+                <div class="project__more">
+                    <a href="https://github.com/rk936503?tab=repositories" target="_blank" rel="noopener"
+                        class="btn btn--primary">View More Projects
+                        <i class="fa-solid fa-angle-down fa-bounce"></i></a>
+                </div>
             </div>
-
         </section>
 
-        <!--=================== Contact ====================-->
+        <!-- Contact -->
         <section id="contact" class="section contact">
             <div class="container">
                 <div class="d-grid contact__wrapper">
                     <div class="contact__content">
                         <h2 class="contact__title">Interested in working together? Let's talk</h2>
                         <p class="contact__description">
-                            Ready to work together on your next software project? I'd love to hear from you!
-                            Feel free to get in touch using the contact information below.
-                            Whether you have a specific project in mind or just want to chat about your software
-                            development needs, I am here to help.
-                            I will respond to your message as quickly as possible and look forward to connecting with
-                            you soon.
+                            Ready to work together on your next software project? I'd love to hear from you! Feel
+                            free to get in touch using the contact information below. Whether you have a specific
+                            project in mind or just want to chat about your software development needs, I am here to
+                            help. I will respond to your message as quickly as possible and look forward to
+                            connecting with you soon.
                         </p>
                     </div>
                     <div class="contact__btn">
-                        <a style="align-items:center; gap:10px; text-align:center;"
-                            href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" class="btn btn--secondary">Get in touch
+                        <a href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn--secondary">Get in touch
                             <i class="fa-solid fa-handshake"></i></a>
                     </div>
                 </div>
-                <!-- Contact Form -->
-                <div
-                    style="display: flex; min-height: 100vh; font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 1.4px; margin-top: 10px;">
-                    <div style="flex: 0 1 700px; margin: auto; padding: 10px; width: 100%;">
-                        <div
-                            style="position: relative; background: #3e3e3e; border-radius: 15px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); width: 100%;">
-                            <div
-                                style="display: flex; align-items: center; padding: 10px 20px; background: #4d4d4f; border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                                <div style="margin-right: auto;">
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #ed1c6f;">
-                                    </div>
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; margin-right: 3px; border-radius: 8px; background: #e8e925;">
-                                    </div>
-                                    <div
-                                        style="display: inline-block; width: 8px; height: 8px; border-radius: 8px; background: #74c54f;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="display: flex; flex-wrap: wrap; flex-direction: column; padding: 20px;">
-                                <div style="flex: 1; padding: 20px; color: #32a852;">
-                                    <div style="font-size: 26px; margin-bottom: 10px;">
-                                        <span>CONTACT ME</span>
-                                    </div>
-                                </div>
-                                <div style="">
-                                    <!-- Embed Google Form -->
-                                    <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLScJjty2ldqGVrt_Cq3YPFs2HKmv5jCx9KU5kpWD7RSELZrBeQ/viewform?usp=publish-editor"
-                                        width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
+
+                <!-- Contact form -->
+                <div class="contact__form">
+                    <div class="contact__form-bar">
+                        <span class="dot dot--red"></span>
+                        <span class="dot dot--yellow"></span>
+                        <span class="dot dot--green"></span>
+                    </div>
+                    <div class="contact__form-body">
+                        <div class="contact__form-title">CONTACT ME</div>
+                        <iframe title="Contact form"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLScJjty2ldqGVrt_Cq3YPFs2HKmv5jCx9KU5kpWD7RSELZrBeQ/viewform?usp=publish-editor"
+                            width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">
+                        </iframe>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!--=================== footer ====================-->
+
+    <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
-            <div class="d-grid footer__wrapper"
-                style="display:flex;justify-content:center; align-items:center; text-align:center;">
+            <div class="footer__wrapper">
                 <div class="footer__content">
                     <h4 class="footer__title">Follow Me</h4>
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
-                            <a href="mailto:rk936503@gmail.com" target="_blank" class="footer__social-link">
+                            <a href="mailto:rk936503@gmail.com" class="footer__social-link" aria-label="Email">
                                 <i class="fa-regular fa-envelope fa-beat-fade"></i>
                             </a>
                         </li>
-
                         <li class="footer__social-item">
-                            <a href="https://api.whatsapp.com/send?phone=919435185277"
-                                target="_blank" class="footer__social-link">
+                            <a href="https://api.whatsapp.com/send?phone=919435185277" target="_blank"
+                                rel="noopener noreferrer" class="footer__social-link" aria-label="WhatsApp">
                                 <i class="fa-brands fa-whatsapp fa-beat-fade"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="https://www.instagram.com/rahul_kr_369" target="_blank"
-                                class="footer__social-link">
+                            <a href="https://www.instagram.com/rahul_kr_369" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram fa-beat-fade"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" target="_blank" class="footer__social-link">
+                            <a href="https://www.linkedin.com/in/rahul-kumar-2557aa28b/" target="_blank"
+                                rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
                                 <i class="fa-brands fa-linkedin-in fa-beat-fade"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="https://github.com/rk936503" target="_blank" class="footer__social-link">
+                            <a href="https://github.com/rk936503" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link" aria-label="GitHub">
                                 <i class="fa-brands fa-github fa-fade"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-
             </div>
+            <p class="footer__copyright">© {currentYear} Rahul Kumar. All rights reserved.</p>
         </div>
     </footer>
 
-    <!--=================== SwiperJS  ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!--=================== ScrollReveal ==================-->
+    <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--=================== Main JS ====================-->
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-        const typewriterTexts = [
-          "Backend Developer",
-          "Full Stack Web Developer",
-          "System Design Enthusiast",
-        ];
-
-        let currentTextIndex = 0;
-        let charIndex = 0;
-
-        const typewriterElement = document.getElementById("typewriter");
-
-        function typeEffect() {
-          const currentText = typewriterTexts[currentTextIndex];
-          typewriterElement.textContent = currentText.slice(0, charIndex);
-          charIndex++;
-          if (charIndex > currentText.length) {
-            setTimeout(() => {
-              charIndex = 0;
-              currentTextIndex = (currentTextIndex + 1) % typewriterTexts.length;
-            }, 2000);
-          }
-          setTimeout(typeEffect, 100);
-        }
-
-        typeEffect();
-    </script>
 </body>
 
 </html>
